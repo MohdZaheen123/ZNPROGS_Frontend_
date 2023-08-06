@@ -3,20 +3,15 @@ import Cookies from 'js-cookie'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
-import { useAuth } from '../lib/authContext';
 
 const blogs = ({ blogs }) => {
   const [pageIndex, setPageIndex] = useState(1)
 
-  const user = useAuth();
 
   useEffect(() => {
     let p = parseInt(Cookies.get('pagerem'));
     setPageIndex(p)
   }, [])
-
-  const pagechange = () => {
-  }
 
   const { data } = useSWR(`${process.env.NEXT_PUBLIC_STRAPI_URL}/blogs?populate=*&sort=id:DESC&pagination[page]=${Cookies.get('pagerem')}&pagination[pageSize]=5`, fetcher, {
     fallbackData: blogs
@@ -26,8 +21,6 @@ const blogs = ({ blogs }) => {
     return <div>Loading...</div>;
   }
   else {
-
-    if (user) {
       return (
         <section className="text-gray-400 bg-gray-900 body-font">
           <div className="flex flex-wrap w-11/12 m-auto mb-20 relative top-36">
@@ -109,19 +102,6 @@ const blogs = ({ blogs }) => {
           </div>
         </section>
       )
-    }
-    else {
-
-      return (
-        <div className='h-screen grid place-items-center'>
-          <div className='text-xl'>     PLEASE LOGIN TO CONTINUE <br />
-            CLICK HERE TO <a href="/login" className='text-blue-600'>LOGIN</a> / <a href="/signin" className='text-blue-600'>SIGN UP</a>💻💻
-          </div>
-        </div>
-      )
-
-    }
-
   }
 }
 
