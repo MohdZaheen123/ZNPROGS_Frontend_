@@ -1,0 +1,642 @@
+
+.text{
+  color: white;
+  font-size: 2.5rem;
+ 
+}
+
+.head::before{
+  content: "";
+    width: 100%;
+    height: 55rem;
+    top: 0;
+    position: absolute;
+    background: url("../public/new.jpg")no-repeat center center/cover;
+    opacity: 1;
+  }
+  .head{
+  height: 43rem;
+}
+.headding{
+  font-size: 3.5rem;
+  margin-left: 3rem;
+}
+.headding h3{
+  color: white;
+}
+.blogs{
+  width: 70%;
+  height: 43rem;
+  margin: auto;
+  border-radius: 8px;
+}
+.content{
+  background-color: #111827;
+  color: #8ca1af;
+  height: 190rem;
+}
+.body p{
+  color: #00b9d5;
+}
+.body{
+  color: aliceblue;
+  /* border: 2px solid red; */
+  max-width: 34rem;  
+  margin: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  top: 18rem;
+}
+.inspiration{
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+  height: 45rem;
+  background-color: #374151;
+  border-radius: 8px;
+}
+.inspiration b {
+  font-size: 3rem;
+  color: aliceblue;
+  margin: 3rem;
+}
+.foot{
+  margin-top: 3rem;
+  height: 15rem;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-around;
+}
+.inspi{
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.blog_btn{
+  width: 7rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #374151;
+  color: aliceblue;
+  margin-top: 1rem;
+}
+.cwh{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 32px;
+  margin-top: 1rem;
+}
+.cwhlink{
+  display: flex;
+}
+.link{
+  margin-top: 1rem;
+    margin-left: 3rem;
+    border-left: 2px solid;
+    padding: 1rem;
+}
+.blogfeature {
+  background-color: #fcfcff;
+  height: 48rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.features{
+  display: flex;
+  /* justify-content: center; */
+
+}
+.feimg{
+  height: 29rem;
+  width: 28rem;
+  margin-left: 11rem;
+  margin-right: 6rem;
+}
+.list{
+  border-left: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  color: black;
+}
+.list pre{
+  font-size: 1.7rem;
+  margin-left: 16rem;
+  font-family: 'Lato', sans-serif;
+}
+.list h3{
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 4rem;
+}
+
+.tecnology{
+  background-color: aliceblue;
+  height: 24rem;
+  margin-top: 2rem;
+}
+
+.techtxt{
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem;
+  color: black;
+}
+.techimg{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.next{
+  height: 5rem;
+  width: 8rem;
+}
+.socials{
+  display: flex;
+  /* flex-direction: column; */
+
+  height: 11rem;
+  margin: 2rem;
+}
+.socials p {
+  margin: 1rem;
+font-size: 1.1rem;
+color: white;
+}
+.socials a{
+width: 2rem;
+}
+.socials img{
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+}
+.more{
+    font-size: 1.1rem;
+color: white;
+height: 10rem;
+border-right: 2px solid white;
+}
+.more p {
+  margin-bottom: 1rem;
+}
+.more a{
+  margin-left: 1rem;
+}
+.copy{
+  height: 2rem;
+  position: relative;
+  top: 11rem;
+  right: 6rem;
+}
+.copy p{
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* media quries▶️▶️▶️▶️▶️▶️ */
+
+
+
+@media screen and (min-width:1690px) and (max-width:1956px) {
+
+  .body p{
+    font-size: 2rem;
+    width:  45rem;
+  }
+  .head{
+    height: 57rem;
+  }
+  .head::before{
+    height: 61rem;
+  }
+.blog_btn{
+  width: 11rem;
+  height: 4rem;
+}
+.blog_btn a{
+  font-size: 1.5rem;
+}
+
+.inspiration{
+  height: 56rem;
+}
+.inspi{
+  font-size: 2.3rem;
+}
+.more{
+  font-size: 2rem;
+  height: 13rem;
+}
+.more p{
+  font-size: 2rem;
+}
+.media p{
+  font-size: 2rem;
+}
+.socials img{
+  width: 3rem;
+  height: 3rem;
+}
+.foot{
+  font-size: 2rem;
+  height: 22rem;
+}
+.foot p{
+  font-size: 2rem;
+}
+.socials{
+  margin-top: 6rem;
+}
+.features{
+  justify-content: center;
+}
+.feimg{
+  margin-left: -221px;
+  height: 29rem;
+  width: 29rem;
+}
+.list pre{
+  font-size: 2.25rem;
+  margin-left: 26rem;
+}
+}
+@media screen and (min-width:1956px) {
+  .body p{
+    font-size: 2.5rem;
+    width:  51rem;
+  }
+  .head{
+    height: 60rem;
+  }
+  .head::before{
+    height: 64rem;
+  }
+  .blog_btn{
+    width: 11rem;
+    height: 6rem;
+  }
+  .blog_btn a{
+    font-size: 1.3rem
+  }
+  .content{
+    overflow: hidden;
+    height: 217rem;
+  }
+  /* .blogfeature{
+    height: 50rem;
+  } */
+  .features{
+    margin: auto;
+  }
+
+
+  .feimg{
+    height: 39rem;
+    width: 43rem;
+    margin-left: -16rem;
+  }
+   .list pre{
+    font-size: 2.7rem;
+    margin-left: 33rem;
+   }
+   .list h3{
+    font-size: 4rem;
+    width: 25rem;
+    margin-left: 10rem;
+   }
+  .techtxt{
+    font-size: 5rem;
+  }
+  .tecnology{
+    height: 30rem;
+  }
+  .techimg{
+    margin-top: 5rem;
+  }
+  .techimg img{
+    height: 7rem;
+    width: 8rem;
+  }
+  .inspiration{
+    height: 61rem;
+  }
+  .inspiration b{
+    font-size: 4rem;
+
+  }
+  .inspi{
+    width: 80%;
+    font-size: 2.5rem;
+  }
+  .more{
+    font-size: 1.8rem;
+  }
+  .socials{
+    position: relative;
+    left: 20rem;
+  }
+  .socials p{
+    font-size: 2rem;
+  }
+  .copy{
+    height: 4rem;
+    font-size: 1.8rem;
+  }
+  .copy p{
+    font-size: 2rem;
+  }
+  .foot{
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:675px){
+  .body{
+      top: 20rem;
+      max-width: initial;
+      margin: 2rem;
+      font-size: 1.24rem;
+  }
+  .blogfeature{
+    height: 53rem;
+  }
+  .features{
+    flex-direction: column;
+  }
+  .feimg{
+    height: 24rem;
+    width: 24rem;
+    margin: auto;
+    display: block;
+  }
+  .list pre{
+    font-size: 1.25rem;
+    margin-left: 0rem;
+  }
+  .list{
+    width: 25rem;
+    margin: auto;
+    border-left: 0px;
+  }
+  .list h3{
+    margin-left: 0rem;
+    position: relative;
+    top: -30rem;
+  }
+  .techtxt{
+    font-size: 2.5rem;
+    padding: 3rem;
+    font-weight: bold;
+  }
+  .techimg{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+  .tecnology{
+    height: 33rem;
+  }
+  .techimg img{
+    margin: 1rem;
+  }
+
+  .inspiration{
+    width: 90%;
+    height: 50rem;
+  }
+  .inspiration b{
+    margin: 1rem;
+  }
+  .inspi{
+    width: 84%;
+    margin-top: 4rem;
+  }
+  .link{
+    margin-top: 0;
+  }
+  .cwh{
+    margin-top: 0;
+  }
+  .media{
+    margin-right: -1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .more{
+    width: 11rem;
+  }
+  .copywr{
+    width: 15rem;
+  }
+  .copy{
+    top: 11rem;
+    right: -3rem;
+  }
+}
+
+
+
+@media screen and (min-width:675px) and (max-width:954px){
+  .body{
+      top: 20rem;
+      max-width: initial;
+      margin: 2rem;
+      font-size: 1.24rem;
+  }
+  .blogfeature{
+    height: 53rem;
+  }
+  .features{
+    flex-direction: column;
+  }
+  .feimg{
+    height: 24rem;
+    width: 24rem;
+    margin: auto;
+    display: block;
+  }
+  .list pre{
+    font-size: 1.25rem;
+    margin-left: 0rem;
+  }
+  .list{
+    width: 25rem;
+    margin: auto;
+    border-left: 0px;
+  }
+  .list h3{
+    margin-left: 0rem;
+    position: relative;
+    top: -30rem;
+  }
+  .techtxt{
+    font-size: 2.5rem;
+    padding: 3rem;
+    font-weight: bold;
+  }
+  .techimg{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+  .tecnology{
+    height: 33rem;
+  }
+  .techimg img{
+    margin: 2em;
+  }
+
+  .inspiration{
+    width: 90%;
+    height: 43rem;
+  }
+  .inspiration b{
+    margin: 1rem;
+  }
+  .inspi{
+    width: 84%;
+    margin-top: 4rem;
+  }
+  .link{
+    margin-top: 0;
+  }
+  .cwh{
+    margin-top: 0;
+  }
+  .media{
+    margin-right: -1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .more{
+    width: 11rem;
+  }
+  .copywr{
+    width: 15rem;
+  }
+  .copy{
+    top: 11rem;
+    right: 0rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width:500px) {
+  .body{
+        margin: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+  }
+  .head{
+    height: 50rem;
+  }
+  .head::before{
+    height: 52rem;
+  }
+  .headding{
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  .headding h3{
+    text-align: center;
+    margin: 2rem;
+  }
+  .text{
+    font-size: 2rem;
+  }
+  .blogfeature{
+    height: 42rem;
+  }
+  .features{
+    flex-direction: column;
+  }
+  .feimg{
+    height: 22rem;
+    width: 22rem;
+    margin: auto;
+    display: block;
+  }
+  .list pre{
+        font-size: 1.09rem;
+    width: 24rem;
+    margin: auto;
+    font-weight: bolder;
+  }
+  .list{
+    width: 25rem;
+    margin: auto;
+    border-left: 0px;
+  }
+  .list h3{
+    font-size: 2rem;
+    margin-left: 0rem;
+    position: relative;
+    top: -1rem;
+        width: 20rem;
+    margin: auto;
+  }
+  .techimg{
+        margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+.techimg img{
+        height: 4rem;
+    width: 4rem;
+    margin: 0.6rem;
+}
+.tecnology{
+  height: 30rem;
+}
+.inspiration{
+  width: 93%;
+  height: 52rem;
+}
+.inspi{
+  width: 90%;
+  font-size: 1.2rem;
+}
+.foot{
+  height: 24rem;
+}
+.copywr{
+  width: 15rem;
+}
+.copy{   
+   top: 17rem;
+    right: -7rem;
+}
+.more{
+  width: 11rem;
+  height: 12rem;
+}
+
+.socials{
+      position: relative;
+      right: 11rem;
+}
+.socials img{
+      margin-left: 0.5rem;
+}
+.blogs{
+  width: 90%;
+  height: 57rem;
+}
+.techtxt{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.next{
+  height: 3rem;
+}
+.content{
+  height: 223rem;
+}
+}
